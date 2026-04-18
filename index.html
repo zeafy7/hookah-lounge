@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Hookah Lounge</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="lockHint" class="visible" aria-live="polite">
+      <span>Кликни по экрану, чтобы захватить мышь. Esc — отпустить. На телефоне используй кнопки снизу.</span>
+    </div>
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
+    <div class="mobile-controls">
+      <button data-dir="left" aria-label="Повернуть влево">◀</button>
+      <button data-dir="up" aria-label="Вперёд">▲</button>
+      <button data-dir="down" aria-label="Назад">▼</button>
+      <button data-dir="right" aria-label="Повернуть вправо">▶</button>
+      <button id="actionBtn">Действие</button>
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
